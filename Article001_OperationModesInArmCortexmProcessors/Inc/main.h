@@ -11,8 +11,8 @@
 /*** Macro Definition ***/
 
 /* IPSR - Interrupt Program Status Register,
- * If the execution is in Handler mode the value present in IPSR is 0 */
-#define IPSR_HANDLER_MODE_VALUE (0U)
+ * If the execution is in Thread mode the value present in IPSR is 0 */
+#define IPSR_THREAD_MODE_VALUE (0U)
 
 /* IPSR - Interrupt Program Status Register,
  * From the IPSR value, need to subtract 16U to get in terms of IRQ number */

@@ -54,3 +54,4 @@ dkms.conf
 # STM32CUBE IDE
 .metadata/
 Debug/
+Release/

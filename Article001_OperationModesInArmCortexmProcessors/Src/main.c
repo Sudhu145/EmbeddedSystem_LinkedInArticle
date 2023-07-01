@@ -63,14 +63,14 @@ static void printCurrOperationMode(void)
 	curr_ipsrValue = __get_IPSR();
 
 	/* Enter into this condition, if current operation mode is thread */
-	if(curr_ipsrValue == IPSR_HANDLER_MODE_VALUE)
+	if(curr_ipsrValue == IPSR_THREAD_MODE_VALUE)
 	{
-		printf("Current Operation Mode : Handler\n");
+		printf("Current Operation Mode : Thread\n");
 	}
 	/* Enter into this condition, if current operation mode is handler */
 	else
 	{
-		printf("Current Operation Mode : Thread, ISR Number : %ld\n",(curr_ipsrValue - IPSR_IRQ_OFFSET));
+		printf("Current Operation Mode : Handler, ISR Number : %ld\n",(curr_ipsrValue - IPSR_IRQ_OFFSET));
 	}
 }
 
